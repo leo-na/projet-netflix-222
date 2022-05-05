@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,46 +9,66 @@
     <link rel="stylesheet" href="./styles/style.scss" />
   </head>
   <body>
-    <header class="header">
-      <div>
-        <figure>
-          <img
-            src="https://nsa38.casimages.com/img/2017/08/16/170816064921910872.jpg"
-            alt="page_logo"
-          />
-        </figure>
-      </div>
-      <div>
-        <figure>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
-            alt="instagram_logo"
-          />
-          <img
-            src="https://thumbs.dreamstime.com/z/ic%C3%B4ne-de-logo-facebook-128455961.jpg"
-            alt="facebook _logo"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
-            alt="linkedin_logo"
-          />
-        </figure>
-      </div>
-    </header>
-    <div class=""></div>
-    <form id="form" action="search">
-      <label for="search">Rechercher un film </label>
-      <input class="input" type="search" id="search" required />
-      <button class="search-btn3" type="submit">Rechercher</button>
-    </form>
+    <div class="video_contener">
+      <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
 
-    <form id="form" action="search">
-      <label for="search">Rechercher un film </label>
-      <input class="input" type="search" id="search" required />
-      <button class="search-btn3" type="submit">Rechercher</button>
-    </form>
-    <p id="count"></p>
-    <div id="results"></div>
-    <article id="movie"></article>
+      <header class="header">
+        <div>
+          <figure>
+            <img
+              class="image"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Microsoft_Stream.svg/768px-Microsoft_Stream.svg.png?20200322001412"
+              alt="page_logo"
+            />
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img
+              class="image"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png?20210403190622"
+              alt="instagram_logo"
+            />
+            <img
+              class="image"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/768px-Facebook_F_icon.svg.png"
+              alt="facebook _logo"
+            />
+            <img
+              class="image"
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="linkedin_logo"
+            />
+          </figure>
+        </div>
+      </header>
+
+      <div class=""></div>
+      <form class="form" id="form" action="search">
+        <label for="search">Rechercher un film </label>
+        <input class="input" type="search" id="input" required />
+        <button class="search-btn3" type="submit">Rechercher</button>
+      </form>
+      <p>
+        Les enfants découvrent de nouvelles aventures et retrouvent leurs
+        personnages préférés dans un espace bien à eux
+      </p>
+      <form class="formulaire" action="search">
+        <label for="search">recherche d'acteur </label>
+        <input class="searchbar" type="search" required />
+        <button class="search-btn2" type="submit">Rechercher</button>
+      </form>
+      <p>
+        Les enfants découvrent de nouvelles aventures et retrouvent leurs
+        personnages préférés dans un espace bien à eux
+      </p>
+      <p id="count"></p>
+      <div id="results"></div>
+      <article class="article"></article>
+
+      <article class="second_article"></article>
+    </div>
   </body>
 </html>
