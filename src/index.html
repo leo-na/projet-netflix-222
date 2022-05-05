@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HelloCiné</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="./styles/style.scss" />
   </head>
@@ -13,7 +17,6 @@
       <video autoplay muted loop>
         <source src="video.mp4" type="video/mp4" />
       </video>
-
       <header class="header">
         <div>
           <figure>
@@ -24,13 +27,22 @@
             />
           </figure>
         </div>
+
+        <div class="main_title">
+          <h1>HelloCiné</h1>
+          <p>TOUT VOS SITES STREAMING EN UN !</p>
+        </div>
+
         <div>
           <figure>
-            <img
-              class="image"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png?20210403190622"
-              alt="instagram_logo"
-            />
+            <a href="https://twitter.com/themoviedb">
+              <img
+                class="image"
+                src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/450px-Twitter_Bird.svg.png?20160903181215"
+                alt="instagram_twiter"
+              />
+            </a>
+
             <img
               class="image"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Facebook_F_icon.svg/768px-Facebook_F_icon.svg.png"
@@ -51,24 +63,7 @@
         <input class="input" type="search" id="input" required />
         <button class="search-btn3" type="submit">Rechercher</button>
       </form>
-      <p>
-        Les enfants découvrent de nouvelles aventures et retrouvent leurs
-        personnages préférés dans un espace bien à eux
-      </p>
-      <form class="formulaire" action="search">
-        <label for="search">recherche d'acteur </label>
-        <input class="searchbar" type="search" required />
-        <button class="search-btn2" type="submit">Rechercher</button>
-      </form>
-      <p>
-        Les enfants découvrent de nouvelles aventures et retrouvent leurs
-        personnages préférés dans un espace bien à eux
-      </p>
-      <p id="count"></p>
-      <div id="results"></div>
-      <article class="article"></article>
-
-      <article class="second_article"></article>
+      <div class="films"></div>
     </div>
   </body>
 </html>
