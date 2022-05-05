@@ -76,8 +76,11 @@ let searchfilms = function () {
       for (let i = 0; i < film.length; i++) {
         let animeCreated = carte(film[i]);
         $films.appendChild(animeCreated);
-
         $firstinput.value = "";
+
+        if (($firstinput.value = "")) {
+          return;
+        }
       }
     });
 };
