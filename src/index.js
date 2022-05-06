@@ -59,6 +59,7 @@ let searchfilms = function () {
         return;
       }
       if (response.results.length === 0) {
+        $firstinput.value = "";
         alert("il n'y a pas de film pour cette recherche");
         return;
       }

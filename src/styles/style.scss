@@ -3,18 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .image_logo {
   height: 50px;
   width: 50px;
   cursor: pointer;
 }
+
 img {
   max-width: 100%;
 }
+
 body {
   background-color: black;
   font-family: cursive;
   color: white;
+  padding-top: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .header {
@@ -22,16 +27,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 90px;
   width: 100%;
   background-color: rgb(83, 27, 6);
   margin-bottom: 5px;
+  position: fixed;
+  top: 0;
+  padding-left: 1px;
+  padding: 2rem;
 }
+
 .image {
   height: 30px;
   width: 30px;
   cursor: pointer;
 }
+
 .image:hover {
   opacity: 0.5;
 }
@@ -41,24 +52,20 @@ body {
   width: 100%;
   overflow: scroll;
 }
-.video_contener video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  z-index: -9999;
-  transform: translate(-50%, -50%);
-}
+
 .search-btn3 {
   background-color: rgb(41, 47, 47);
 }
+
 form {
   z-index: 9999;
+  padding: 2rem;
 }
+
 p {
   z-index: 9999;
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -75,51 +82,54 @@ p {
   width: 100%;
   height: 100%;
 }
+
 .card {
   width: 400px;
   margin: 0px auto;
   background-color: rgb(88, 30, 30);
   box-shadow: 0px 5px 20px #999;
 }
+
 .card a {
   color: rgb(247, 119, 119);
   text-decoration: none;
 }
+
 .card:hover .card-image img {
   width: 160%;
 }
+
 .card-image {
   height: 250px;
   position: relative;
   overflow: hidden;
 }
+
 .card-image img {
   width: 150%;
-
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   transition-property: filter width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
+
 .card-image img:hover {
-  transform: scale(2);
+  transform: scale(1.90);
+  transform-origin: center;
 }
+
 .card-body {
   text-align: center;
   padding: 15px 20px;
   box-sizing: border-box;
 }
 .card-date {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .card-title,
 .card-excerpt {
-  font-family: "Playfair Display", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .card-date,
@@ -133,14 +143,19 @@ p {
 .card-excerpt {
   color: #777;
 }
+
 .films {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
+  gap: 10px;
 }
+
 .dimensions {
   height: 500px;
   width: 300px;
 }
+
 .input,
 .search-btn3 {
   padding: 0.65rem 1rem;
@@ -150,6 +165,7 @@ p {
   text-decoration: none;
   margin-bottom: 10px;
 }
+
 .search-btn3 {
   color: white;
 }
